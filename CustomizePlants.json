@@ -3,129 +3,99 @@
   "PlantSettings": [
     {
       "id": "BasicSingleHarvestPlant",
-      "irrigation": {}
+      "irrigation": {},
+      "can_tinker": false,
+      "max_age": 1.0
     },
     {
       "id": "MushroomPlant",
       "fruitId": "Mushroom",
-      "fruit_grow_time": 3600.0,
-      "fruit_amount": 1,
-      "irrigation": {},
+      "irrigation": {
+        "DirtyWater": 5.0
+      },
       "input_element": "CarbonDioxide",
-      "input_rate": 0.001
+      "input_rate": 0.1,
+      "can_tinker": false,
+      "max_age": 1.0
     },
     {
       "id": "PrickleFlower",
-      "irrigation": {
-        "Water": 5.0
-      }
+      "can_tinker": false,
+      "max_age": 1.0
     },
     {
       "id": "SeaLettuce",
       "irrigation": {
-        "SaltWater": 5.0
-      }
+        "SaltWater": 1.0
+      },
+      "can_tinker": false,
+      "max_age": 1.0
     },
     {
       "id": "BeanPlant",
       "irrigation": {
-        "Ethanol": 5.0
-      }
+        "Ethanol": 1.0
+      },
+      "can_tinker": false,
+      "max_age": 1.0
     },
     {
       "id": "SpiceVine",
       "irrigation": {
-        "DirtyWater": 15.0,
-        "Phosphorite": 1.0
-      }
+        "DirtyWater": 5.0
+      },
+      "can_tinker": false,
+      "max_age": 1.0
     },
     {
       "id": "ForestTree",
       "irrigation": {
-        "DirtyWater": 62.5,
-        "Dirt": 10.0
-      }
+        "DirtyWater": 5.0
+      },
+      "can_tinker": false,
+      "max_age": 1.0
     },
     {
       "id": "ColdBreather",
-      "irrigation": {},
-      "radiation": 0.0,
-      "radiation_radius": 6
+      "irrigation": {}
     },
     {
       "id": "GasGrass",
-      "illumination": 100.0
+      "illumination": 10.0
     },
     {
-      "id": "PrickleGrass",
-      "safe_elements": [
-        "Oxygen",
-        "ContaminatedOxygen",
-        "CarbonDioxide",
-        "ChlorineGas"
-      ],
-      "input_element": "ChlorineGas",
-      "input_rate": 0.01
+      "id": "PrickleGrass"
     },
     {
       "id": "LeafyPlant",
-      "fruitId": "placeholder1",
-      "fruit_grow_time": 2400.0,
-      "irrigation": {
-        "Water": 10.0
-      }
+      "irrigation": {}
     },
     {
       "id": "CactusPlant",
-      "safe_elements": [
-        "Oxygen",
-        "ContaminatedOxygen",
-        "CarbonDioxide",
-        "Methane"
-      ],
-      "pressures": [
-        0.0,
-        0.0,
-        2.0,
-        30.0
-      ],
-      "input_element": "Methane",
-      "input_rate": 0.01,
-      "output_element": "CarbonDioxide",
-      "output_rate": 0.01
+      "irrigation": {}
     },
     {
       "id": "EvilFlower",
-      "safe_elements": [
-        "CarbonDioxide",
-        "ChlorineGas"
-      ],
-      "pressures": [
-        0.0,
-        0.0,
-        5.0
-      ],
-      "output_element": "ChlorineGas",
-      "output_rate": 0.012
+      "irrigation": {}
     },
     {
       "id": "SuperWormPlant",
+      "can_tinker": false,
       "max_age": 1.0
     },
     {
       "id": "WormPlant",
+      "can_tinker": false,
       "max_age": 1.0
     },
     {
       "id": "SwampHarvestPlant",
+      "can_tinker": false,
       "max_age": 1.0
     }
   ],
   "SpecialCropSettings": {
-    "placeholder1": {
-      "Algae": 40,
-      "Clay": 20
-    }
+    "placeholder1": {}
   },
   "print_mutations": false,
   "MutationSettings": [
@@ -458,7 +428,7 @@
   "CheatFlowerVase": false,
   "WildFlowerVase": false,
   "ApplyBugFixes": true,
-  "AutomaticallyAddModPlants": false,
+  "AutomaticallyAddModPlants": true,
   "IgnoreList": [],
   "ModPlants": []
 }
